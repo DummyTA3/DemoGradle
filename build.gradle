@@ -1,1 +1,7 @@
 apply plugin: 'java'
+
+// Dependencies should be resolved from here:
+repositories {
+    mavenCentral()
+}
+
