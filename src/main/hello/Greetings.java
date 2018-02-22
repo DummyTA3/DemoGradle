@@ -22,4 +22,13 @@ public class Greetings {
     public String goodMorning(String name) {
         return "Good morning " + name + "!!";
     }
+
+    /**
+     * Says good afternoon to the person passed as argument
+     * @param name of the person
+     * @return Good morning {Name}
+     */
+    public String goodAfternoon(String name) {
+        return "Good afternoon Akshay!";
+    }
 }
