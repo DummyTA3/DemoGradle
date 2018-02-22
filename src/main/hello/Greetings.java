@@ -13,4 +13,13 @@ public class Greetings {
     public String sayHello(String name) {
         return "Hello " + name + "!";
     }
+
+    /**
+     * Says good morning to the person passed as argument
+     * @param name of the person
+     * @return Good morning {Name}
+     */
+    public String goodMorning(String name) {
+        return "Good morning " + name + "!!";
+    }
 }
