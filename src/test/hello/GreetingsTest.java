@@ -9,4 +9,10 @@ public class GreetingsTest {
 
     Greetings testG = new Greetings();
 
+    @Test
+    public void sayHello_noName_returnsHello() {
+        String expected = "Hello !";
+        String actual = testG.sayHello(null);
+        assertEquals(expected, actual);
+    }
 }
