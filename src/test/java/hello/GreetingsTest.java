@@ -1,6 +1,6 @@
 package hello;
 
-import main.hello.Greetings;
+import hello.Greetings;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
