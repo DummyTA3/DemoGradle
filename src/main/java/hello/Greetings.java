@@ -1,4 +1,4 @@
-package main.hello;
+package hello;
 
 /**
  * Contains various greeting (hello!) messages
