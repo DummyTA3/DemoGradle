@@ -1,21 +1,32 @@
-apply plugin: 'java'
+plugins {
+    id 'java'
+    id 'application'
+}
+
+mainClassName = 'hello.HelloWorld'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
 
 // Dependencies should be resolved from here:
 repositories {
     mavenCentral()
 }
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
 dependencies {
     compile "joda-time:joda-time:2.2"
     testCompile "junit:junit:4.12"
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.12'
+}
+
+test {
+    test.include 'hello/**'
+}
+
 jar {
-    baseName = 'DemoGradle'
+    baseName = 'GradleDemo'
     version =  '0.1.0'
-	
-	destinationDir = file("./jar/")
 }
