@@ -15,4 +15,11 @@ public class GreetingsTest {
         String actual = testG.sayHello(null);
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void sayHello_johnGiven_returnsHelloJohn() {
+        String expected = "Hello John!";
+        String actual = testG.sayHello("John");
+        asserEquals(expected, actual);
+    }
 }
