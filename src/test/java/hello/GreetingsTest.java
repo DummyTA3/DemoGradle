@@ -1,4 +1,4 @@
-package test.hello;
+package hello;
 
 import main.hello.Greetings;
 
@@ -20,6 +20,6 @@ public class GreetingsTest {
     public void sayHello_johnGiven_returnsHelloJohn() {
         String expected = "Hello John!";
         String actual = testG.sayHello("John");
-        asserEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 }
