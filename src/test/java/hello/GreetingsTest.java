@@ -10,8 +10,8 @@ public class GreetingsTest {
     Greetings testG = new Greetings();
 
     @Test
-    public void sayHello_noName_returnsHello() {
-        String expected = "Hello !";
+    public void sayHello_noName_returnsNull() {
+        String expected = "Hello null!";
         String actual = testG.sayHello(null);
         assertEquals(expected, actual);
     }
